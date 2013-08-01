@@ -1,0 +1,23 @@
+﻿<Window x:Class="TryCards.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cards="clr-namespace:TryCards.Controls"
+        Title="MainWindow" Height="350" Width="525">
+
+    <ScrollViewer Grid.Column="0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            
+            
+            <cards:InfoCard Grid.Row="0"></cards:InfoCard>
+            <cards:InfoCard Grid.Row="2"></cards:InfoCard>
+        </Grid>
+
+    </ScrollViewer>
+</Window>
