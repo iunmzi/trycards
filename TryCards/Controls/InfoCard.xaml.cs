@@ -26,7 +26,7 @@ namespace TryCards.Controls
         }
 
         Brush GridMainDefault = Brushes.LightGray;
-        Brush GridMainHighlight = Brushes.LightBlue;
+        Brush GridMainHighlight = Brushes.DodgerBlue; //CadetBlue, CornflowerBlue, DodgerBlue
 
 
         private void On_Border_MouseEnter(object sender, MouseEventArgs e)
