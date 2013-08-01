@@ -4,14 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="69"  d:DesignWidth="400">
+             d:DesignHeight="69" d:DesignWidth="400">
 
     <Border BorderBrush="DarkBlue" BorderThickness="1" Margin="2"
             Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-            MouseEnter="On_Border_MouseEnter" MouseLeave="On_Border_MouseLeave">
+            MouseEnter="On_Border_MouseEnter" MouseLeave="On_Border_MouseLeave" >
         <Grid Name="grdMain" Background="LightGray">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
+                <ColumnDefinition Width="50" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40" />
@@ -20,7 +21,11 @@
 
 
             <Label Grid.Row="0" FontSize="20" FontWeight="Bold">Block Name</Label>
-            <Label Grid.Row="1" Foreground="Blue" FontStyle="Italic">Path on disc or network</Label>
+            <Button Grid.Row="0" Grid.Column="1"
+                    Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
+                    Name="btnDetail" Visibility="Hidden">>></Button>
+            <Label Grid.Row="1" Grid.ColumnSpan="2"
+                   Foreground="Blue" FontStyle="Italic">Path on disc or network</Label>
         </Grid>
     </Border>
 

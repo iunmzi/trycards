@@ -32,11 +32,13 @@ namespace TryCards.Controls
         private void On_Border_MouseEnter(object sender, MouseEventArgs e)
         {
             this.grdMain.Background = this.GridMainHighlight;
+            this.btnDetail.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void On_Border_MouseLeave(object sender, MouseEventArgs e)
         {
             this.grdMain.Background = this.GridMainDefault;
+            this.btnDetail.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }
