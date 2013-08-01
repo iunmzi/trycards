@@ -10,12 +10,13 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70"  />
+                <RowDefinition  Height="*" />
             </Grid.RowDefinitions>
             
             
-            <cards:InfoCard Grid.Row="0" Margin="0,0,0,1"></cards:InfoCard>
+            <cards:InfoCard Grid.Row="0"></cards:InfoCard>
             <cards:InfoCard Grid.Row="1"></cards:InfoCard>
         </Grid>
 

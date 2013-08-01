@@ -24,5 +24,19 @@ namespace TryCards.Controls
         {
             InitializeComponent();
         }
+
+        Brush GridMainDefault = Brushes.LightGray;
+        Brush GridMainHighlight = Brushes.LightBlue;
+
+
+        private void On_Border_MouseEnter(object sender, MouseEventArgs e)
+        {
+            this.grdMain.Background = this.GridMainHighlight;
+        }
+
+        private void On_Border_MouseLeave(object sender, MouseEventArgs e)
+        {
+            this.grdMain.Background = this.GridMainDefault;
+        }
     }
 }
